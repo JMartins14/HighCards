@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/popup_back">
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spades_symbol"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="260dp"
+        android:background="@drawable/spades_symbol"
+        android:onClick="spadesclicked"/>
+    />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hearts_symbol"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/heart_symbol"
+        android:onClick="heartsclicked"/>
+    />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clubs_symbol"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/clubs_symbol"
+        android:onClick="clubsclicked"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diamonds_symbol"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/diamonds_symbol"
+        android:onClick="diamondsclicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please choose a naipe"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        />
+</RelativeLayout>
