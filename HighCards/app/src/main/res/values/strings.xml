@@ -4,4 +4,5 @@
     <string name="welcome_string">Welcome to</string>
     <string name="username_string">Username:</string>
     <string name="play_card_text">Confirm</string>
+    <string name="htmlstring" />
 </resources>
