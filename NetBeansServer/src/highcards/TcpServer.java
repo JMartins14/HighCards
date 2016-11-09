@@ -24,6 +24,7 @@ public class TcpServer {
    
    public static void connection(int server_port){
        online_users = new ArrayList<>();
+       int i =0;
        System.out.println("A Escuta no Porto " + server_port);
         try {
             listenSocket = new ServerSocket(server_port);
@@ -38,7 +39,6 @@ public class TcpServer {
            } catch (IOException e) {
                 System.out.println("IO: "+e.getMessage());              
            }
-           int i=0;
            System.out.println("CLIENT_SOCKET (created at accept())="+clientSocket);
            Player player = new Player(clientSocket,i++);
            online_users.add(online_users.size(), player);

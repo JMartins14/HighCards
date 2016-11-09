@@ -4,29 +4,38 @@
     android:layout_height="match_parent">
 
     <Button
-        android:text="Jogar"
+        android:text="Jogar Offline"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonjogar"
-        android:onClick="button_jogar_clicked"
-        android:layout_marginTop="40dp"
+        android:onClick="button_offline_clicked"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"/>
+
+    <Button
+        android:text="Jogar Online"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonjogaronline"
+        android:onClick="button_online_clicked"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="140dp"/>
 
     <Button
         android:text="Instruções"
-        android:layout_width="311dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttoninstrucoes"
         android:onClick="button_instrucoes_clicked"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="140dp"/>
 
     <Button
         android:text="Voltar"
-        android:layout_width="312dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonvoltar"
         android:onClick="button_voltar_clicked"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="140dp"/>
 </LinearLayout>

@@ -37,33 +37,40 @@ public class ThreadConnection  extends Thread implements Serializable{
     
     @Override
     public void run(){
+        String data;
             while(!this.isInterrupted()){
-                receve_from_client();
+                data = receve_from_client();
+                //read_data(data);
             }
                 
     }
-    public void send_to_client(){
-        try{
-                InputStreamReader input = new InputStreamReader(System.in);
-                BufferedReader reader = new BufferedReader(input);
-            while(!this.isInterrupted()){
-                outToClient.println(reader.readLine());
-                
-            }
-        }catch(EOFException e){System.out.println("EOF:" + e);
-        }catch(IOException e){System.out.println("IO:" + e);
+    public void read_data(String data){
+        if(data.equals("username")){
+            send_to_client("recebi o username");
+        }
+        else if(data.equals("castilho")){
+            send_to_client("castilho burro");
         }
     }
-    public void receve_from_client(){
-         try {
+    
+    public void send_to_client(String text){    
+        if(!this.isInterrupted()){
+            outToClient.println(text);        
+        }
+    }
+    
+    public String receve_from_client(){
+        String data =null; 
+        try {
             if(inFromClient.ready()){
-                String data = inFromClient.readLine();
+                 data = inFromClient.readLine();
                 if(data!=null)
                     System.out.println("T["+thread_number + "] Recebeu: "+data);
             }
         } catch (IOException ex) {
             System.out.println("IO:" +ex);
         }
+         return data;
     }
    
 }

@@ -12,17 +12,20 @@ import android.view.WindowManager;
  */
 
 public class menu_secundario extends Activity {
+    private String user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
+        Bundle bundle = getIntent().getExtras();
+        user = bundle.getString("username");
         setContentView(R.layout.menu_secundario);
     }
 
-    public void button_jogar_clicked(View view) {
-        Intent jogar = new Intent(this,MainActivity.class);
+    public void button_offline_clicked(View view) {
+        Intent jogar = new Intent(this,Game.class);
+        jogar.putExtra("username",user);
         startActivity(jogar);
         finish();
     }
@@ -34,6 +37,15 @@ public class menu_secundario extends Activity {
     }
 
     public void button_voltar_clicked(View view) {
-
+        Intent menu = new Intent(this,MainActivity.class);
+        startActivity(menu);
+        finish();
     }
-}
+
+    public void button_online_clicked(View view) {
+        Intent online_game = new Intent(this,ClientSocket.class);
+        startActivity(online_game);
+        finish();
+        }
+    }
+

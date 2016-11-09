@@ -1,8 +1,14 @@
-package com.example.martins.sockets;
+package com.example.martins.highcards;
 
+/**
+ * Created by Martins on 09/11/2016.
+ */
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -18,7 +24,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class Client extends AppCompatActivity{
+public class ClientSocket extends Activity {
     Handler UIHandler;
     Thread thread = null;
     public static final int server_port = 6000;
@@ -32,15 +38,16 @@ public class Client extends AppCompatActivity{
         editText = (EditText)findViewById(R.id.editText);
         UIHandler = new Handler();
         checkConnectionDialog();
-            thread1 = new Thread1();
-            this.thread = new Thread(thread1);
-            this.thread.start();
+    }
 
-
+    private void startThread(){
+        thread1 = new Thread1();
+        thread = new Thread(thread1);
+        thread.start();
     }
     private void checkConnectionDialog(){
         //Verifica se wifi esta conectado
-        if(!checkWifiOnAndConnected()){
+        if(!isNetworkAvailable()){
             final AlertDialog.Builder exitDialog = new AlertDialog.Builder(this);
             exitDialog.setMessage("Por favor conecte o Wifi");
             exitDialog.setCancelable(true);
@@ -52,35 +59,28 @@ public class Client extends AppCompatActivity{
             final AlertDialog alerta = exitDialog.create();
             alerta.show();
             alerta.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(new View.OnClickListener(){
-
                 @Override
                 public void onClick(View view) {
-                    if(checkWifiOnAndConnected())
+                    if(isNetworkAvailable()){
+                        startThread();
                         alerta.dismiss();
+                    }
                 }
             });
         }
     }
-    private boolean checkWifiOnAndConnected() {
-        WifiManager wifiMgr = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-
-        if (wifiMgr.isWifiEnabled()) { // Wi-Fi adapter is ON
-
-            WifiInfo wifiInfo = wifiMgr.getConnectionInfo();
-
-            if( wifiInfo.getNetworkId() == -1 ){
-                return false; // Not connected to an access point
-            }
-            return true; // Connected to an access point
-        }
-        else {
-            return false; // Wi-Fi adapter is OFF
-        }
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        if( activeNetworkInfo != null)
+            return true;
+        return false;
     }
 
     public void send_button_clicked(View view) {
         String text = editText.getText().toString();
-       thread1.main_thread.send_to_server(text);
+        thread1.main_thread.send_to_server(text);
     }
 
 
@@ -92,8 +92,8 @@ public class Client extends AppCompatActivity{
             try{
 
                 InetAddress serverAddr =InetAddress.getByName(hostname);
-               Socket socket = new Socket(serverAddr, server_port);
-                 main_thread = new Thread2(socket);
+                Socket socket = new Socket(serverAddr, server_port);
+                main_thread = new Thread2(socket);
                 main_thread.run();
             } catch (UnknownHostException e) {
                 e.printStackTrace();
@@ -126,7 +126,7 @@ public class Client extends AppCompatActivity{
         public void run() {
             while(!Thread.currentThread().isInterrupted()){
                 try {
-                   String read = input.readLine();
+                    String read = input.readLine();
 
                     if(read != null){
                         UIHandler.post(new UpdateUIThread(read));
