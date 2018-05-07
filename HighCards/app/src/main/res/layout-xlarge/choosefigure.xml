@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/pop_up">
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta2"
+        android:background="@drawable/carta2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta3"
+        android:background="@drawable/carta3"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta4"
+        android:background="@drawable/carta4"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="260dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta5"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="360dp"
+        android:background="@drawable/carta5"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta6"
+        android:background="@drawable/carta6"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="460dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta7"
+        android:background="@drawable/carta7"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="560dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta8"
+        android:background="@drawable/carta8"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta9"
+        android:background="@drawable/carta9"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carta10"
+        android:background="@drawable/carta10"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="260dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valete"
+        android:background="@drawable/valete"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="360dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dama"
+        android:background="@drawable/dama"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="460dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rei"
+        android:background="@drawable/rei"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="560dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/as"
+        android:background="@drawable/as"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="60dp"
+        />
+
+
+</RelativeLayout>

@@ -3,9 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Martins/Documents/NetBeansProjects/HighCards/src/highcards/ThreadConnection.java</file>
-            <file>file:/C:/Users/Martins/Documents/NetBeansProjects/HighCards/src/highcards/Player.java</file>
-            <file>file:/C:/Users/Martins/Documents/NetBeansProjects/HighCards/src/highcards/TcpServer.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/ThreadConnection.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/Deck.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/MauMau.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/Game.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/TcpServer.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/Card.java</file>
+            <file>file:/C:/Users/Administrator/Documents/PGIrepo/HighCards/NetBeansServer/src/highcards/Player.java</file>
         </group>
     </open-files>
 </project-private>

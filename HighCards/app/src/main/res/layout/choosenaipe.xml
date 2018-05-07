@@ -1,58 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/popup_back">
+    android:background="@drawable/pop_up"><![CDATA[
     >
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spades_symbol"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="260dp"
-        android:background="@drawable/spades_symbol"
-        android:onClick="spadesclicked"/>
     />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/hearts_symbol"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="190dp"
-        android:background="@drawable/heart_symbol"
-        android:onClick="heartsclicked"/>
+
+
     />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/clubs_symbol"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="110dp"
-        android:background="@drawable/clubs_symbol"
-        android:onClick="clubsclicked"/>
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/diamonds_symbol"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/diamonds_symbol"
-        android:onClick="diamondsclicked"/>
+
+
+
+    ]]>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Please choose a naipe"
+        android:text="Por favor, escolha um naipe"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:textColor="#000000"
         android:textSize="15dp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="80sp"
         />
+
+    <ImageButton
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/spades_symbol"
+        android:background="@drawable/spades_symbol"
+        android:onClick="spadesclicked"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="232sp"
+        android:layout_marginStart="232sp" />
+
+    <ImageButton
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/hearts_symbol"
+        android:background="@drawable/heart_symbol"
+        android:onClick="heartsclicked"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="164sp"
+        android:layout_marginStart="164sp" />
+
+    <ImageButton
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/clubs_symbol"
+        android:background="@drawable/clubs_symbol"
+        android:onClick="clubsclicked"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="96sp"
+        android:layout_marginStart="96sp" />
+
+    <ImageButton
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/diamonds_symbol"
+        android:background="@drawable/diamonds_symbol"
+        android:onClick="diamondsclicked"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="28sp"
+        android:layout_marginStart="28sp" />
 </RelativeLayout>

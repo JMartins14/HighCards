@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">High Cards</string>
-    <string name="Play">Play</string>
-    <string name="welcome_string">Welcome to</string>
+    <string name="Play">Jogar</string>
+    <string name="welcome_string">Bem-vindo</string>
+    <string name="Spades">Spades</string>
+    <string name="Hearts">Hearts</string>
+    <string name="Diamonds">Diamonds</string>
+    <string name="Clubs">Clubs</string>
+
     <string name="username_string">Username:</string>
-    <string name="play_card_text">Confirm</string>
+    <string name="play_card_text">Confirmar</string>
     <string name="htmlstring" />
 </resources>

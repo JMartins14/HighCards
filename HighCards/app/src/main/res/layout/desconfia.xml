@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/game"
+    android:background="@drawable/background">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pauseButton"
+        android:background="@drawable/pause_button"
+        android:onClick="pauseClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:text="Desconfiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="desconfiarClicked"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <Button
+        android:text="Passar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="passarClicked"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:id="@+id/button"
+        android:onClick="confirmClicked"
+        android:layout_marginLeft="95dp"
+        android:layout_marginStart="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/button3" />
+
+</RelativeLayout>

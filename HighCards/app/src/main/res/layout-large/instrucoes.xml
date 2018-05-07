@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmain">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/instrucoes"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:id="@+id/voltar"
+        android:onClick="botaovoltar"
+        android:layout_gravity="bottom"
+            android:layout_marginLeft="300sp"
+         />
+        <Button
+        android:text="Anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:id="@+id/anterior"
+        android:onClick="botaoAnterior"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="60sp"
+
+            />
+        <Button
+            android:text="Seguinte"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/next"
+            android:onClick="botaoNext"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60sp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

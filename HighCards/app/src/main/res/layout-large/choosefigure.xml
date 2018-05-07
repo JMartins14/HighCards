@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/pop_up">
+    >
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta2"
+        android:background="@drawable/carta2"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta3"
+        android:background="@drawable/carta3"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="110dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta4"
+        android:background="@drawable/carta4"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="180dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta5"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/carta5"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta6"
+        android:background="@drawable/carta6"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="320dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta7"
+        android:background="@drawable/carta7"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="390dp"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta8"
+        android:background="@drawable/carta8"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta9"
+        android:background="@drawable/carta9"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="110dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/carta10"
+        android:background="@drawable/carta10"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="180dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/valete"
+        android:background="@drawable/valete"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="250dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/dama"
+        android:background="@drawable/dama"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="320dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/rei"
+        android:background="@drawable/rei"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="390dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:id="@+id/as"
+        android:background="@drawable/as"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="40dp"
+        />
+
+
+</RelativeLayout>
